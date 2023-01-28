@@ -5,16 +5,14 @@ function FromPage(){
     const [selectedData,setSelectedData]=useState("");
     const history= useHistory()
     
-    const handlesubmit =(e)=>{
+    const handleSubmit =(e)=>{
         e.preventDefault();
         history.push({
             pathname:'/grid',
             search:`?data=${selectedData}`
         });
     }
-    const handleSubmit =(e)=>{
-        e.preventDefault();
-    }
+   
     return(
         <form onsubmit={handleSubmit}>
             <label>

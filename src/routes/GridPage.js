@@ -18,9 +18,9 @@ function GridPage(){
     return(
         <div className='ag-theme-material'>
             <AgGridReact
-           // columnsDefs={columnDefs}
+            columnsDefs={columnDefs}
             rowData={data}
-         //   onGridReady={onGridReady}
+            onGridReady={onGridReady}
             pagination={true}
             paginationPageSize={10}
             sorting={true}
